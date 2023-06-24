@@ -13,7 +13,7 @@ html {
 
 .bg-image {
     /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1611095772772-8f1a2a5b9c8e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1hY2hpbmVzZSUyMHNpbXBsZSUyMG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");
+    background-image: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
     /* Add the blur effect */
     filter: blur(8px);
     -webkit-filter: blur(8px);
