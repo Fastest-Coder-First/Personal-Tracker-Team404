@@ -77,3 +77,5 @@ function updateTotalCost() {
   const totalCostElement = document.getElementById('total-cost');
   totalCostElement.textContent = totalCost.toFixed(2);
 }
+
+//change
