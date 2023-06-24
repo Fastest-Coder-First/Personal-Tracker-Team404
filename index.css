@@ -1,5 +1,3 @@
-/* add nice cool  gradient to the index.heml */
-
 body,
 html {
     height: 100%;
@@ -7,6 +5,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* add elements upon background image */
 * {
     box-sizing: border-box;
 }
@@ -44,3 +43,118 @@ html {
     text-align: center;
 }
 
+.expense-label {
+    margin-right: 10px;
+    padding: 3px;
+}
+
+/* Button */
+#add-button {
+    font-size: 1em;
+    margin-top: 0.8em;
+    background-color: #32b47e;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+
+}
+
+#add-button:hover {
+    background-color: #1a8558;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+
+
+
+.expense-label {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.expense-label.label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.expense-label.focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.expense-labelinput {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+}
+
+.expense-labelinput:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.expense-labelinput:not(:-moz-placeholder-shown)+.label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.expense-labelinput:not(:-ms-input-placeholder)+.label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.expense-labelinput:not(:placeholder-shown)+.label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.expense-labelinput:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+}
+
+.expense-labelinput:focus+.label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.expense-labelinput:focus+.label+.focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+}
