@@ -42,6 +42,10 @@ html {
   padding: 20px;
   text-align: center;
   animation: fade-in 1s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fade-in {
@@ -55,13 +59,13 @@ html {
 
 .expense-label {
   margin-right: 10px;
-  padding: 10px;
+  padding: 0.1em;
 }
 
 /* Button */
 #add-button {
   font-size: 1em;
-  margin-top: 0.8em;
+  margin-top: 1em; /* Updated margin */
   background-color: #32b47e;
   border: none;
   outline: none;
@@ -112,3 +116,25 @@ html {
 .delete-button:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* Existing CSS code */
+
+/* Summary button */
+#summary-button {
+    font-size: 1em;
+    margin-top: 1em;
+    background-color: #32b47e;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #summary-button:hover {
+    background-color: #1a8558;
+    color: rgb(255, 255, 255);
+  }
+  
