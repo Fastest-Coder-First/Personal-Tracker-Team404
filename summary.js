@@ -22,12 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  
   function createSummaryItem(index, label, price) {
     const itemDiv = document.createElement('div');
     itemDiv.classList.add('summary-item');
   
     const indexSpan = document.createElement('span');
-    indexSpan.textContent = index + '.) ';
+    indexSpan.textContent = index + '. ';
     indexSpan.classList.add('summary-index');
   
     const labelSpan = document.createElement('span');
