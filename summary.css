@@ -50,14 +50,22 @@ html {
 }
 
 .summary-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white; 
 }
 
 .summary-label {
-  margin: 10px;
+    margin: 10px;
+    flex-grow: 1; 
+    text-align: left; 
+}
+.summary-price {
+    margin: 10px;
+    flex-shrink: 0; 
+    text-align: right; 
 }
 
 /* Button */
